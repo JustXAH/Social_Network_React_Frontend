@@ -1,29 +1,17 @@
-import './../App.css';
+import style from'./Profile.module.css';
+import MyPosts from "./MyPosts/MyPosts";
 
 const Profile = () => {
 	return (
-		<div className='content'>
+		<div className={style.content}>
 			<div>
 				<img src='https://getawayzante.com/wp-content/uploads/2020/05/by-the-sea.jpg'/>
 			</div>
 			<div>
 				ava + description
 			</div>
-			<div>
-				My posts
-			</div>
-			<div>
-				New posts
-			</div>
-			<div>
-				Post 1
-			</div>
-			<div>
-				Post 2
-			</div>
-			<div>
-				Post 3
-			</div>
+
+			<MyPosts />
 		</div>
 	)
 }

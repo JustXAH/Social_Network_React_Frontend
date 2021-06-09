@@ -1,8 +1,8 @@
-import './../App.css';
+import style from './Footer.module.css';
 
 const Footer = () => {
 	return (
-		<footer className='footer'>
+		<footer className={style.footer}>
 			IT-kamasutra.com
 		</footer>
 	)
