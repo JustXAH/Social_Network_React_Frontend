@@ -1,11 +1,11 @@
 import style from'./Profile.module.css';
 import MyPosts from "./MyPosts/MyPosts";
 
-const Profile = () => {
+const Profile = (props) => {
 	return (
-		<div className={style.content}>
-			<div>
-				<img src='https://getawayzante.com/wp-content/uploads/2020/05/by-the-sea.jpg'/>
+		<div>
+			<div className={style.wallpaper}>
+				<img alt='wallpaper' src='https://getawayzante.com/wp-content/uploads/2020/05/by-the-sea.jpg'/>
 			</div>
 			<div>
 				ava + description

@@ -1,9 +1,14 @@
 .item {
-    color: green;
+    color: black;
 }
 
-.item img {
+#avatar {
     width: 50px;
     height: 45px;
     border-radius: 40px;
+}
+
+#like {
+    width: 30px;
+    height: 30px;
 }
