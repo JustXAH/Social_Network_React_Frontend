@@ -5,8 +5,8 @@ import ProfileInfo from "./ProfileInfo/ProfileInfo";
 const Profile = (props) => {
 	return (
 		<div>
-			<ProfileInfo />
-			<MyPosts />
+			<ProfileInfo wallpaperPath={props.wallpaperPath}/>
+			<MyPosts posts={props.posts}/>
 		</div>
 	)
 }
