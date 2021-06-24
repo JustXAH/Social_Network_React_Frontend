@@ -3,7 +3,7 @@ import style from './Footer.module.css';
 const Footer = (props) => {
 	return (
 		<footer className={style.footer}>
-			IT-kamasutra.com
+			Course "React JS - the way of the samurai" by IT-kamasutra.com
 		</footer>
 	)
 }

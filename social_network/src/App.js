@@ -16,11 +16,11 @@ const App = (props) => {
 				<Header/>
 				<Navbar/>
 				<div className='app-wrapper-content'>
-					<Route path='/profile' render={ () => <Profile posts={props.posts} wallpaperPath={props.wallpaperPath}/> }/>
-					<Route path='/dialogs' render={ () => <Dialogs /> }/>
-					<Route path='/news' render={ () => <News /> }/>
-					<Route path='/music' render={ () => <Music /> } />
-					<Route path='/settings' render={ () => <Settings /> }/>
+					<Route path='/profile' render={() => <Profile state={props.state.profilePage}/>}/>
+					<Route path='/dialogs' render={() => <Dialogs state={props.state.messagesPage}/>}/>
+					<Route path='/news' render={() => <News/>}/>
+					<Route path='/music' render={() => <Music/>}/>
+					<Route path='/settings' render={() => <Settings/>}/>
 				</div>
 				<Footer/>
 			</div>

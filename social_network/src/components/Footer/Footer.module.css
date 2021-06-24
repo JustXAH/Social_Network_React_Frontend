@@ -1,5 +1,7 @@
 .footer {
     grid-area: f;
-    background-color: springgreen;
+    /*background-color: black;*/
     text-align: center;
+    color: whitesmoke;
+    border: 1px solid grey;
 }

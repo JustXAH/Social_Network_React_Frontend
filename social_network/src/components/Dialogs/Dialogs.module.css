@@ -5,10 +5,22 @@
 
 .dialogItems {
     padding: 10px;
+    border: 1px solid grey;
+    text-align: center;
+    font-size: 1.3em;
 }
 
+
 .dialogItems .dialog a {
-    color: white;
+    color: whitesmoke;
+    background: none;
+    text-decoration: none;
+}
+
+.dialogItems .dialog:hover {
+    color: whitesmoke;
+    background: grey;
+    background-size: 100%;
     text-decoration: none;
 }
 
@@ -21,5 +33,10 @@
 }
 
 .messages .message {
-    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    background: black;
+    color: whitesmoke;
+    border: 2px solid grey;
+    border-radius: 10px;
 }

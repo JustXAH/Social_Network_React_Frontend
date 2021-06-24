@@ -1,14 +1,21 @@
 .nav {
     grid-area: n;
-    background-color: crimson;
+    /*background-color: crimson;*/
     padding: 25px;
     font-size: 25px;
+    border: 1px solid grey;
 }
 
 .item a {
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
 }
+
+.item:hover {
+    background: grey;
+    text-decoration: none;
+}
+
 
 .item a.activeLink {
     color: gold;

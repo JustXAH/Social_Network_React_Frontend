@@ -1,8 +1,30 @@
 .header {
+    float: left;
     grid-area: h;
-    background-color: burlywood;
+    /*background-color: burlywood;*/
+    border: 1px solid grey;
+
+    /*text-align: center;*/
 }
 
-.header img {
-    width: 60px;
+.headerBlocks {
+    float: left;
+    height: 100%;
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
 }
+
+.headerBlocks:nth-child(2) {
+    margin-top: 20px;
+}
+
+.headerBlocks img {
+    height: 100%;
+}
+
+
+/*.networkName {*/
+
+/*    padding-bottom: 20px;*/
+/*}*/
