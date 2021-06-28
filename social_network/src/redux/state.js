@@ -1,3 +1,5 @@
+import {renderEntireTree} from "../render";
+
 let state = {
 	profilePage: {
 		posts: [
@@ -6,6 +8,7 @@ let state = {
 			{id: 3, message: "It's my second post!", likesCount: 12},
 			{id: 4, message: "It's my third post!", likesCount: 9},
 		],
+		newPostText: 'it-kamasutra.com',
 		wallpaperPath: "https://getawayzante.com/wp-content/uploads/2020/05/by-the-sea.jpg",
 	},
 	messagesPage: {
@@ -24,6 +27,22 @@ let state = {
 			{id: 4, message: "Fine. And you?"},
 		],
 	},
+}
+
+export let addPost = () => {
+	let newPost = {
+		id: 5,
+		message: state.profilePage.newPostText,
+		likesCount: 0
+	}
+	state.profilePage.posts.push(newPost);
+	state.profilePage.newPostText = '';
+	renderEntireTree(state);
+}
+
+export let updateNewPostText = (newText) => {
+	state.profilePage.newPostText = newText;
+	renderEntireTree(state);
 }
 
 export default state;

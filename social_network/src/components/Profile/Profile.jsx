@@ -5,8 +5,13 @@ import ProfileInfo from "./ProfileInfo/ProfileInfo";
 const Profile = (props) => {
 	return (
 		<div>
-			<ProfileInfo wallpaperPath={props.state.wallpaperPath}/>
-			<MyPosts posts={props.state.posts}/>
+			<ProfileInfo wallpaperPath={props.profilePage.wallpaperPath}/>
+			<MyPosts
+				posts={props.profilePage.posts}
+				newPostText={props.profilePage.newPostText}
+				updateNewPostText={props.updateNewPostText}
+				addPost={props.addPost}
+			/>
 		</div>
 	)
 }
