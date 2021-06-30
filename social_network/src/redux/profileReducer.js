@@ -1,7 +1,18 @@
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
 const ADD_POST = 'ADD-POST';
 
-const profileReducer = (state, action) => {
+let initialState = {
+	posts: [
+		{id: 1, message: "Hi, how are you?", likesCount: 15},
+		{id: 2, message: "It's my first post!", likesCount: 23},
+		{id: 3, message: "It's my second post!", likesCount: 12},
+		{id: 4, message: "It's my third post!", likesCount: 9},
+	],
+	newPostText: 'it-kamasutra.com',
+	wallpaperPath: "https://getawayzante.com/wp-content/uploads/2020/05/by-the-sea.jpg",
+}
+
+const profileReducer = (state = initialState, action) => {
 	switch (action.type) {
 		case UPDATE_NEW_POST_TEXT:
 			state.newPostText = action.newText;
